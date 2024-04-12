@@ -5,8 +5,8 @@ namespace Infrastructure.GameState.Machine
     public class GameStateMachine : IGameStateMachine
     {
         private readonly IGameStateFactory _gameStateFactory;
-        
-        private IExitableState _activeState;
+
+        public IExitableState ActiveState { get; private set; }
 
         public GameStateMachine(IGameStateFactory gameStateFactory)
         {
@@ -27,10 +27,10 @@ namespace Infrastructure.GameState.Machine
 
         private TState ChangeState<TState>() where TState : class, IExitableState
         {
-            _activeState?.Exit();
+            ActiveState?.Exit();
 
             var state = GetState<TState>();
-            _activeState = state;
+            ActiveState = state;
 
             return state;
         }
