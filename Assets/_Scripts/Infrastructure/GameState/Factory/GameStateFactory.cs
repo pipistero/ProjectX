@@ -1,7 +1,7 @@
-using Infrastructure.GameStateMachine;
+using Infrastructure.GameState.Machine;
 using Zenject;
 
-namespace Infrastructure.GameStateFactory
+namespace Infrastructure.GameState.Factory
 {
     public class GameStateFactory : IGameStateFactory
     {

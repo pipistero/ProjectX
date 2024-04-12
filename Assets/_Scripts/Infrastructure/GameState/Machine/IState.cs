@@ -1,4 +1,4 @@
-namespace Infrastructure.GameStateMachine
+namespace Infrastructure.GameState.Machine
 {
     public interface IPayloadedState<in TPayload> : IExitableState
     {
