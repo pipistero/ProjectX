@@ -1,7 +1,5 @@
 using FluentAssertions;
-using Infrastructure.GameState.Factory;
 using Infrastructure.GameState.Machine;
-using NSubstitute;
 using NUnit.Framework;
 
 namespace Tests.GameState
@@ -13,10 +11,7 @@ namespace Tests.GameState
         {
             //---ARRANGE---
             var state = Create.State();
-            
-            var gameStateFactory = Substitute.For<IGameStateFactory>();
-            gameStateFactory.GetState<IState>().Returns(state);
-            
+            var gameStateFactory = Setup.GameStateFactory(state);
             var gameStateMachine = Create.GameStateMachine(gameStateFactory);
 
             //---ACT---
