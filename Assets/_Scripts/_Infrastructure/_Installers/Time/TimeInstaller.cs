@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using Time;
 using UnityEngine;
 using Zenject;
@@ -6,6 +7,7 @@ namespace _Infrastructure._Installers.Time
 {
     public class TimeInstaller : MonoInstaller
     {
+        [Required]
         [SerializeField] private TimeSettings _timeSettings; 
         
         public override void InstallBindings()
