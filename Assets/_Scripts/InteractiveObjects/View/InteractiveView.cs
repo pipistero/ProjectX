@@ -11,8 +11,8 @@ namespace InteractiveObjects.Controller
         where TInteractive : IInteractive
     {
         [SerializeField, Required] protected Button _button;
-        
-        protected TInteractive _interactive;
+
+        private TInteractive _interactive;
 
         public void Start()
         {
