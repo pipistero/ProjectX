@@ -1,5 +1,6 @@
 using Widgets;
 using Widgets.Controller;
+using Widgets.Interfaces;
 using Zenject;
 
 namespace _Infrastructure._Installers.Widgets

@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using Widgets.Interfaces;
 
 namespace Widgets.Controller
 {

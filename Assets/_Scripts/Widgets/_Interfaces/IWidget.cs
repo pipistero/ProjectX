@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 
-namespace Widgets
+namespace Widgets.Interfaces
 {
     public interface IWidget
     {

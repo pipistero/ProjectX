@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using Widgets.Interfaces;
 
 namespace Widgets.Test
 {

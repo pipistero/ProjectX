@@ -1,10 +1,11 @@
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Widgets.Interfaces;
 
 namespace Widgets
 {
-    public abstract class Widget : SerializedMonoBehaviour, IWidget
+    public abstract class Widget : MonoBehaviour, IWidget
     {
         [FoldoutGroup("Visual dependencies")] 
         [SerializeField, Required] protected CanvasGroup _canvasGroup;
