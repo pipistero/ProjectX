@@ -4,8 +4,8 @@ namespace Time
 {
     public class TimeData
     {
-        public event Action<int> TimeUpdated;
-        public event Action<int> DayUpdated;
+        public event Action<TimeData> TimeUpdated;
+        public event Action<TimeData> DayUpdated;
         
         public int CurrentDay { get; private set; }
         public int CurrentTime { get; private set; }
@@ -20,14 +20,14 @@ namespace Time
                 AddOneDay();
             }
             
-            TimeUpdated?.Invoke(CurrentTime);
+            TimeUpdated?.Invoke(this);
         }
 
         public void AddOneDay()
         {
             CurrentDay++;
             
-            DayUpdated?.Invoke(CurrentDay);
+            DayUpdated?.Invoke(this);
         }
 
         public static TimeData CreateDefault()

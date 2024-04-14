@@ -1,5 +1,4 @@
 using Time;
-using Time.Signals;
 using UnityEngine;
 using Zenject;
 
@@ -11,17 +10,8 @@ namespace _Infrastructure._Installers.Time
         
         public override void InstallBindings()
         {
-            SignalBusInstaller.Install(Container);
-            
-            InstallSignals();
             InstallTimeSettings();
             InstallTimeController();
-        }
-
-        private void InstallSignals()
-        {
-            Container.DeclareSignal<TimeUpdatedSignal>();
-            Container.DeclareSignal<DayUpdatedSignal>();
         }
 
         private void InstallTimeSettings()

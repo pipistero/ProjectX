@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DefaultTimeSettings
   m_EditorClassIdentifier: 
   <MaxTickValue>k__BackingField: 100
-  <TickValue>k__BackingField: 20
+  <TickValue>k__BackingField: 10
