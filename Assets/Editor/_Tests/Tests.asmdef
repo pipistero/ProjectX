@@ -5,7 +5,8 @@
         "Project",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "TNRD.NSubstitute"
+        "TNRD.NSubstitute",
+        "UniTask"
     ],
     "includePlatforms": [
         "Editor"

@@ -7,7 +7,7 @@ namespace Tests.GameState
     public class GameStateMachineTests
     {
         [Test]
-        public void WhenEnteringState_AndAllGood_ThenActiveStateShouldBeEnteredState()
+        public void WhenEnteringState_AndActiveStateIsDefault_ThenActiveStateShouldBeEnteredState()
         {
             //---ARRANGE---
             var state = Create.State();
