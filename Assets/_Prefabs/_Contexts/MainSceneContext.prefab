@@ -33,6 +33,7 @@ Transform:
   - {fileID: 8310842644096522151}
   - {fileID: 873943956624240530}
   - {fileID: 6260110542726329544}
+  - {fileID: 8100791157220721236}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &514956762524143214
@@ -52,6 +53,7 @@ MonoBehaviour:
   - {fileID: 2535813994974008004}
   - {fileID: 1968501931422224060}
   - {fileID: 3242395902660196967}
+  - {fileID: 8696620865844968698}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -77,6 +79,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3895568795362517032}
     m_Modifications:
+    - target: {fileID: 1414365159600953508, guid: cd36838b9ebd8c2499b6aa1e6b6cd40b, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1414365159600953508, guid: cd36838b9ebd8c2499b6aa1e6b6cd40b, type: 3}
     - target: {fileID: 4884113805373431239, guid: cd36838b9ebd8c2499b6aa1e6b6cd40b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -150,6 +156,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3895568795362517032}
     m_Modifications:
+    - target: {fileID: -3040392245302225782, guid: fbabe828bb83804468e08fda073f5ab6, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: -3040392245302225782, guid: fbabe828bb83804468e08fda073f5ab6, type: 3}
     - target: {fileID: 137548856740143701, guid: fbabe828bb83804468e08fda073f5ab6, type: 3}
       propertyPath: m_Name
       value: '[INSTALLER] GameStates'
@@ -215,6 +225,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e6dffd309243909f6002ca1699a898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &8032181756693334535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3895568795362517032}
+    m_Modifications:
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484945720204112471, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+      propertyPath: m_Name
+      value: '[INSTALLER] Widgets'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+--- !u!4 &8100791157220721236 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2239344972892473427, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+  m_PrefabInstance: {fileID: 8032181756693334535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8696620865844968698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1713778372655724285, guid: 14e0ec4feeda2d5439298f55a9b6f8a6, type: 3}
+  m_PrefabInstance: {fileID: 8032181756693334535}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72b468a9b424a809cf4825b7a1d9148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8515719440211887523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -263,6 +346,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544473883025211332, guid: be9d0cd68e5501343812c3bfcf489d3a, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6544473883025211332, guid: be9d0cd68e5501343812c3bfcf489d3a, type: 3}
     - target: {fileID: 9208327037670805010, guid: be9d0cd68e5501343812c3bfcf489d3a, type: 3}
       propertyPath: m_Name
       value: '[INSTALLER] TimeInstaller'
