@@ -1,4 +1,3 @@
-using System;
 using Infrastructure.GameState.Machine;
 using Infrastructure.GameState.States;
 using UnityEngine;

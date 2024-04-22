@@ -1,3 +1,4 @@
+using InteractiveObjects;
 using InteractiveObjects.Casino;
 using Zenject;
 
@@ -10,7 +11,7 @@ namespace _Infrastructure._Installers.Interactive
             InstallInteractive<CasinoInteractive>();
         }
 
-        private void InstallInteractive<TInteractive>()
+        private void InstallInteractive<TInteractive>() where TInteractive : IInteractive
         {
             Container
                 .Bind<TInteractive>()
