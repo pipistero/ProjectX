@@ -1,3 +1,4 @@
+using Sirenix.Utilities;
 using Widgets;
 using Widgets.Controller;
 using Widgets.Interfaces;
@@ -16,19 +17,13 @@ namespace _Infrastructure._Installers.Widgets
         private void InstallWidgets()
         {
             var widgets = FindObjectsOfType<Widget>();
-            
-            foreach (var widget in widgets)
-            {
-                InstallWidget(widget);
-            }
+            widgets.ForEach(InstallWidget);
         }
 
         private void InstallWidget(IWidget widget)
         {
-            var type = widget.GetType();
-
             Container
-                .BindInterfacesAndSelfTo(type)
+                .BindInterfacesAndSelfTo(widget.GetType())
                 .FromInstance(widget)
                 .AsSingle()
                 .NonLazy();
