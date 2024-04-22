@@ -37,6 +37,9 @@ namespace Widgets
             Status = WidgetStatus.Close;
         }
 
+        public virtual UniTask OnOpen() => UniTask.CompletedTask;
+        public virtual UniTask OnClose() => UniTask.CompletedTask;
+
         private UniTask AnimateOpen() => _widgetAnimation.AnimateOpen(this);
         private UniTask AnimateClose() => _widgetAnimation.AnimateClose(this);
     }

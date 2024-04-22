@@ -38,6 +38,7 @@ namespace Widgets.Controller
         {
             var widget = GetWidget<TWidget>();
 
+            await widget.OnOpen();
             await widget.Open();
 
             return widget;
@@ -48,9 +49,9 @@ namespace Widgets.Controller
             var widget = GetWidget<TWidget>();
 
             await widget.Close();
+            await widget.OnClose();
 
             return widget;
-
         }
 
         public TWidget GetWidget<TWidget>() where TWidget : class, IWidget

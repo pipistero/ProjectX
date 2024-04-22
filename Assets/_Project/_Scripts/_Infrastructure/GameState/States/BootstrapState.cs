@@ -29,14 +29,9 @@ namespace Infrastructure.GameState.States
 
         }
 
-        private UniTask InitializeSystems()
+        private async UniTask InitializeSystems()
         {
-            var tasks = new List<UniTask>
-            {
-                _widgetsController.Initialize()
-            };
-
-            return UniTask.WhenAll(tasks);
+            await _widgetsController.Initialize();
         }
     }
 }
