@@ -5,7 +5,7 @@ namespace Widgets.Controller
 {
     public interface IWidgetsController
     {
-        UniTask Initialize();
+        UniTask InitializeAsync();
         
         TWidget GetWidget<TWidget>() where TWidget : class, IWidget;
         

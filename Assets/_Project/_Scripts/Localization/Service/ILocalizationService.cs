@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using Localization.Asset;
 
 namespace Localization.Service
@@ -8,7 +9,9 @@ namespace Localization.Service
         public event Action<LanguageAssetSettings> LanguageChanged;
         
         LanguageAssetSettings CurrentLanguageSettings { get; }
-        
+
+        UniTask InitializeAsync();
+        void ChangeLanguage(LanguageType language);
         string Get(string key);
     }
 }

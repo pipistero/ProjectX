@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using Infrastructure.GameState.Machine;
+using Localization.Service;
 using Widgets.Controller;
 using Zenject;
 
@@ -10,12 +11,14 @@ namespace Infrastructure.GameState.States
     {
         private IGameStateMachine _gameStateMachine;
         private IWidgetsController _widgetsController;
+        private ILocalizationService _localizationService;
 
         [Inject]
-        private void Construct(IGameStateMachine gameStateMachine, IWidgetsController widgetsController)
+        private void Construct(IGameStateMachine gameStateMachine, IWidgetsController widgetsController, ILocalizationService localizationService)
         {
             _gameStateMachine = gameStateMachine;
             _widgetsController = widgetsController;
+            _localizationService = localizationService;
         }
 
         public async void Enter()
@@ -29,9 +32,13 @@ namespace Infrastructure.GameState.States
 
         }
 
+        /// <summary>
+        /// Here you can order systems initialization
+        /// </summary>
         private async UniTask InitializeSystems()
         {
-            await _widgetsController.Initialize();
+            await _widgetsController.InitializeAsync();
+            await _localizationService.InitializeAsync();
         }
     }
 }

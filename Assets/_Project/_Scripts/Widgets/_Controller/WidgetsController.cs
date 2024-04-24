@@ -16,7 +16,7 @@ namespace Widgets.Controller
             _widgetsMap = widgets.ToDictionary(w => w.GetType());
         }
         
-        public UniTask Initialize()
+        public UniTask InitializeAsync()
         {
             var initializationTasks = new List<UniTask>(_widgetsMap.Count);
             

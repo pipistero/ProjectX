@@ -7,6 +7,6 @@ namespace Localization.Asset
         LanguageAssetSettings Settings { get; }
 
         UniTask Prepare();
-        string Get(string key);
+        bool TryGet(string key, out string result);
     }
 }

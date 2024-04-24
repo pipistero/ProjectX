@@ -8,6 +8,7 @@ namespace Widgets
 {
     // TODO: Add layer order control
     // TODO: think about animations
+    // TODO: inject localization
     public abstract class Widget : MonoBehaviour, IWidget
     {
         [FoldoutGroup("Visual")] 
