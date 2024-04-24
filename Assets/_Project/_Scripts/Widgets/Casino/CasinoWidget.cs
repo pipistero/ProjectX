@@ -1,5 +1,6 @@
 using _Infrastructure.Observable;
 using Cysharp.Threading.Tasks;
+using Localization.Asset;
 using TMPro;
 using UnityEngine;
 
