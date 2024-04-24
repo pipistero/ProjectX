@@ -7,6 +7,7 @@ using Widgets.Interfaces;
 namespace Widgets
 {
     // TODO: Add layer order control
+    // TODO: think about animations
     public abstract class Widget : MonoBehaviour, IWidget
     {
         [FoldoutGroup("Visual")] 
