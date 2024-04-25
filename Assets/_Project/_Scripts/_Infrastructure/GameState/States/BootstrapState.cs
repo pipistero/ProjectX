@@ -1,7 +1,8 @@
 using Cysharp.Threading.Tasks;
 using Infrastructure.GameState.Machine;
+using Localization;
 using Localization.Service;
-using Widgets.Controller;
+using UI.Widgets.Controller;
 
 namespace Infrastructure.GameState.States
 {
@@ -35,7 +36,7 @@ namespace Infrastructure.GameState.States
         private async UniTask InitializeSystems()
         {
             await _widgetsController.InitializeAsync();
-            await _localizationService.InitializeAsync();
+            await _localizationService.InitializeAsync(LanguageType.English);
         }
     }
 }

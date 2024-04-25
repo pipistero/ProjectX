@@ -1,7 +1,7 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Widgets.Animations
+namespace UI.Widgets.Animations
 {
     public abstract class WidgetAnimation : MonoBehaviour
     {

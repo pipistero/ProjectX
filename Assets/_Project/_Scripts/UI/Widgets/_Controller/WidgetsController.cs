@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
-using Widgets.Interfaces;
+using UI.Widgets.Interfaces;
 
-namespace Widgets.Controller
+namespace UI.Widgets.Controller
 {
     public class WidgetsController : IWidgetsController
     {

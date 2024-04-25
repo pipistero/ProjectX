@@ -21,7 +21,7 @@ namespace Localization.Service
             _assets = assets.ToList();
         }
         
-        public async UniTask InitializeAsync()
+        public async UniTask InitializeAsync(LanguageType languageType)
         {
             var assetsInitializationTasks = _assets
                 .Select(a => a.Prepare())
@@ -29,7 +29,7 @@ namespace Localization.Service
 
             await UniTask.WhenAll(assetsInitializationTasks);
 
-            _currentAsset = _assets.Find(a => a.Settings.Language == LanguageType.English); // While there is no SaveLoadSystem
+            ChangeLanguage(languageType);
         }
 
         public void ChangeLanguage(LanguageType language)

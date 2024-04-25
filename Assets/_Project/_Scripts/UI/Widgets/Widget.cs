@@ -1,10 +1,10 @@
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using Widgets.Animations;
-using Widgets.Interfaces;
+using UI.Widgets.Animations;
+using UI.Widgets.Interfaces;
 
-namespace Widgets
+namespace UI.Widgets
 {
     // TODO: Add layer order control
     // TODO: think about animations

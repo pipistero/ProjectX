@@ -1,7 +1,7 @@
 using Sirenix.Utilities;
-using Widgets;
-using Widgets.Controller;
-using Widgets.Interfaces;
+using UI.Widgets;
+using UI.Widgets.Controller;
+using UI.Widgets.Interfaces;
 using Zenject;
 
 namespace _Infrastructure._Installers.Widgets

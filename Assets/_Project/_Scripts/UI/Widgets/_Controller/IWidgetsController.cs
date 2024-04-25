@@ -1,7 +1,7 @@
 using Cysharp.Threading.Tasks;
-using Widgets.Interfaces;
+using UI.Widgets.Interfaces;
 
-namespace Widgets.Controller
+namespace UI.Widgets.Controller
 {
     public interface IWidgetsController
     {

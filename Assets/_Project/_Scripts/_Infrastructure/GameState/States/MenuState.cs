@@ -1,6 +1,6 @@
 using Infrastructure.GameState.Machine;
-using Widgets.Controller;
-using Widgets.Test;
+using UI.Widgets.Controller;
+using UI.Widgets.Test;
 
 namespace Infrastructure.GameState.States
 {

@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
-using Widgets.Casino;
-using Widgets.Controller;
+using UI.Widgets.Casino;
+using UI.Widgets.Controller;
 using Zenject;
 
 namespace InteractiveObjects.Casino

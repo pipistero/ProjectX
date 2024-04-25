@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using Zenject;
 
-namespace Widgets.Casino
+namespace UI.Widgets.Casino
 {
     public class CasinoWidget : Widget
     {

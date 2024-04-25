@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 
-namespace Widgets.Animations
+namespace UI.Widgets.Animations
 {
     public class EmptyWidgetAnimation : WidgetAnimation
     {

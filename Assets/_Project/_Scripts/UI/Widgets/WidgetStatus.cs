@@ -1,4 +1,4 @@
-namespace Widgets
+namespace UI.Widgets
 {
     public enum WidgetStatus
     {

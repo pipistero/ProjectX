@@ -10,7 +10,7 @@ namespace Localization.Service
         
         LanguageAssetSettings CurrentLanguageSettings { get; }
 
-        UniTask InitializeAsync();
+        UniTask InitializeAsync(LanguageType languageType);
         void ChangeLanguage(LanguageType language);
         string Get(string key);
     }
